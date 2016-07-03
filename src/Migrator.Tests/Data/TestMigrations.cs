@@ -75,23 +75,10 @@ namespace Migrator.Tests.Data
 		public override void Up()
 		{
 			Database.AddTable(TableName,
-//				new Column("acc_id", DbType.String, ColumnProperty.PrimaryKey | ColumnProperty.Unique | ColumnProperty.NotNull | ColumnProperty.Indexed),
-				new Column("acc_id", DbType.String, ColumnProperty.PrimaryKey | ColumnProperty.Unique | ColumnProperty.NotNull),
-				//				new Column("acc_id", DbType.String, ColumnProperty.NotNull),
+				new Column("acc_id", DbType.String, ColumnProperty.PrimaryKey | ColumnProperty.Unique),
 				new Column("book_id", DbType.String, ColumnProperty.Null),
 				new Column("name", DbType.String, ColumnProperty.Null)
 				);
-
-			//			Database.Commit();
-
-			//			string[] pks = {"acc_id"};
-			//			Database.AddPrimaryKey(String.Format("PK_{0}", TableName), TableName, pks);
-
-			//			var connectionString = "Data Source=tax_data.db;Version=3";
-			//			var provider = ProviderFactory.Create("SQLite", connectionString);
-			//			provider.AddPrimaryKey(String.Format("PK_{0}", TableName), TableName, pks);
-
-			//			Database.AddColumn(TableName,"acc_id",DbType.Single,ColumnProperty.PrimaryKey | ColumnProperty.NotNull);
 		}
 
 		public override void Down()

@@ -19,7 +19,7 @@ namespace Migrator.Providers
             RegisterProperty(ColumnProperty.Null, "NULL");
             RegisterProperty(ColumnProperty.NotNull, "NOT NULL");
             RegisterProperty(ColumnProperty.Unique, "UNIQUE");
-            RegisterProperty(ColumnProperty.PrimaryKey, "PRIMARY KEY");
+            RegisterProperty(ColumnProperty.PrimaryKey, "PRIMARY KEY ASC");
         }
 
 		public abstract ITransformationProvider GetTransformationProvider(Dialect dialect, string connectionString);

@@ -41,7 +41,7 @@ namespace Migrator.Providers.SQLite
         
         public override bool NeedsNotNullForIdentity
         {
-            get { return false; }
+            get { return true; }
         }
     }
 }
