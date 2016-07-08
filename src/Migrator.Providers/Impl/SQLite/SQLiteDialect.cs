@@ -18,11 +18,11 @@ namespace Migrator.Providers.SQLite
             RegisterColumnType(DbType.UInt16, "INTEGER");
             RegisterColumnType(DbType.UInt32, "INTEGER");
             RegisterColumnType(DbType.UInt64, "INTEGER");
-            RegisterColumnType(DbType.Currency, "NUMERIC");
-            RegisterColumnType(DbType.Decimal, "NUMERIC");
-            RegisterColumnType(DbType.Double, "NUMERIC");
-            RegisterColumnType(DbType.Single, "NUMERIC");
-            RegisterColumnType(DbType.VarNumeric, "NUMERIC");
+            RegisterColumnType(DbType.Currency, "REAL");
+			RegisterColumnType(DbType.Decimal, "REAL");
+			RegisterColumnType(DbType.Double, "REAL");
+			RegisterColumnType(DbType.Single, "REAL");
+			RegisterColumnType(DbType.VarNumeric, "REAL");
             RegisterColumnType(DbType.String, "TEXT");
             RegisterColumnType(DbType.AnsiStringFixedLength, "TEXT");
             RegisterColumnType(DbType.StringFixedLength, "TEXT");
